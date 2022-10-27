@@ -40,7 +40,6 @@ class Calculator extends React.Component {
   handleClick = (event) => {
     const buttonNm = event.target.name;
     this.obj = calculate(this.obj, buttonNm);
-    console.log(this.obj);
     if (isNumber(buttonNm) || buttonNm === '+/-') {
       this.setState({ toDisplay: this.obj.next || 0 });
     } else {
