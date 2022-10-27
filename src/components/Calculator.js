@@ -11,11 +11,36 @@ class Calculator extends React.Component {
       next: null,
       operation: null,
     };
+    this.leftButtons = {
+      AC: 'AC',
+      plusminus: 'X/-',
+      percent: '%',
+      seven: '7',
+      eight: '8',
+      nine: '9',
+      four: '4',
+      five: '5',
+      six: '6',
+      one: '1',
+      two: '2',
+      three: '3',
+      zero: '0',
+      decimal: '.',
+    };
+
+    this.rightButtons = {
+      divide: '÷',
+      multiply: 'x',
+      subtract: '-',
+      add: '+',
+      equal: '=',
+    };
   }
 
   handleClick = (event) => {
     const buttonNm = event.target.name;
     this.obj = calculate(this.obj, buttonNm);
+    console.log(this.obj);
     if (isNumber(buttonNm) || buttonNm === '+/-') {
       this.setState({ toDisplay: this.obj.next || 0 });
     } else {
@@ -32,7 +57,7 @@ class Calculator extends React.Component {
         </div>
         <div className="left-buttons flex-row">
           <button
-            name="AC"
+            name={this.leftButtons.AC}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -48,7 +73,7 @@ class Calculator extends React.Component {
             +/-
           </button>
           <button
-            name="%"
+            name={this.leftButtons.percent}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -56,7 +81,7 @@ class Calculator extends React.Component {
             %
           </button>
           <button
-            name="7"
+            name={this.leftButtons.seven}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -64,7 +89,7 @@ class Calculator extends React.Component {
             7
           </button>
           <button
-            name="8"
+            name={this.leftButtons.eight}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -72,7 +97,7 @@ class Calculator extends React.Component {
             8
           </button>
           <button
-            name="9"
+            name={this.leftButtons.nine}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -80,7 +105,7 @@ class Calculator extends React.Component {
             9
           </button>
           <button
-            name="4"
+            name={this.leftButtons.four}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -88,7 +113,7 @@ class Calculator extends React.Component {
             4
           </button>
           <button
-            name="5"
+            name={this.leftButtons.five}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -96,7 +121,7 @@ class Calculator extends React.Component {
             5
           </button>
           <button
-            name="6"
+            name={this.leftButtons.six}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -104,7 +129,7 @@ class Calculator extends React.Component {
             6
           </button>
           <button
-            name="1"
+            name={this.leftButtons.one}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -112,7 +137,7 @@ class Calculator extends React.Component {
             1
           </button>
           <button
-            name="2"
+            name={this.leftButtons.two}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -120,7 +145,7 @@ class Calculator extends React.Component {
             2
           </button>
           <button
-            name="3"
+            name={this.leftButtons.three}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -128,7 +153,7 @@ class Calculator extends React.Component {
             3
           </button>
           <button
-            name="0"
+            name={this.leftButtons.zero}
             type="button"
             className="left-button zero"
             onClick={this.handleClick}
@@ -136,7 +161,7 @@ class Calculator extends React.Component {
             0
           </button>
           <button
-            name="."
+            name={this.leftButtons.decimal}
             type="button"
             className="left-button"
             onClick={this.handleClick}
@@ -146,7 +171,7 @@ class Calculator extends React.Component {
         </div>
         <div className="right-buttons flex-col">
           <button
-            name="÷"
+            name={this.rightButtons.divide}
             type="button"
             className="right-button"
             onClick={this.handleClick}
@@ -154,7 +179,7 @@ class Calculator extends React.Component {
             &#247;
           </button>
           <button
-            name="x"
+            name={this.rightButtons.multiply}
             type="button"
             className="right-button"
             onClick={this.handleClick}
@@ -162,7 +187,7 @@ class Calculator extends React.Component {
             x
           </button>
           <button
-            name="-"
+            name={this.rightButtons.subtract}
             type="button"
             className="right-button"
             onClick={this.handleClick}
@@ -170,7 +195,7 @@ class Calculator extends React.Component {
             -
           </button>
           <button
-            name="+"
+            name={this.rightButtons.add}
             type="button"
             className="right-button"
             onClick={this.handleClick}
@@ -178,7 +203,7 @@ class Calculator extends React.Component {
             +
           </button>
           <button
-            name="="
+            name={this.rightButtons.equal}
             type="button"
             className="right-button"
             onClick={this.handleClick}
