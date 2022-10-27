@@ -47,6 +47,12 @@
   border: solid 1px #dad2cb;
 }
 
+.left-button:hover,
+.right-button:hover {
+  cursor: pointer;
+  border: solid 1px #fff;
+}
+
 .zero {
   flex-grow: 2;
 }
