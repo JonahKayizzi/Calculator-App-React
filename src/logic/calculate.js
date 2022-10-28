@@ -132,4 +132,4 @@ function calculate(obj, buttonName) {
   };
 }
 
-export { calculate, isNumber };
+export default calculate;
