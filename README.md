@@ -12,10 +12,6 @@
 - Gitflow
 - Hooks, States, Props
 
-## Live Demo
-
-[Live Demo Link](https://jonahkayizzi.github.io/Calculator-App-React/)
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -36,7 +32,7 @@ run the following commands in your terminal
 
 ## Author
 
-👤 **Author 1**
+👤 **Jonah Kayizzi**
 
 - GitHub: [@JonahKayizzi](https://github.com/JonahKayizzi)
 
