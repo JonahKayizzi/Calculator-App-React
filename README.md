@@ -10,6 +10,7 @@
 - Linters
 - npm
 - Gitflow
+- Hooks, States, Props
 
 ## Live Demo
 
