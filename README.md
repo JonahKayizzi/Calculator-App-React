@@ -10,10 +10,7 @@
 - Linters
 - npm
 - Gitflow
-
-## Live Demo
-
-[Live Demo Link](https://jonahkayizzi.github.io/Calculator-App-React/)
+- Hooks, States, Props
 
 ## Getting Started
 
@@ -35,7 +32,7 @@ run the following commands in your terminal
 
 ## Author
 
-👤 **Author 1**
+👤 **Jonah Kayizzi**
 
 - GitHub: [@JonahKayizzi](https://github.com/JonahKayizzi)
 
