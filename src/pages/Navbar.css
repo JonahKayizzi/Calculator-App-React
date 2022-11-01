@@ -1,0 +1,33 @@
+h1 {
+  font-size: 3em;
+  margin-left: 2em;
+  color: #6f6f7c;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #e0e0e0;
+  box-shadow: 2px 2px 5px 5px #858694;
+}
+
+ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  gap: 1em;
+}
+
+li a {
+  color: #858694;
+  border-right: solid 2px #858694;
+  padding: 0 2em;
+  font-size: 1.3em;
+}
+
+.active {
+  color: #f5913e;
+  text-decoration: none;
+}
