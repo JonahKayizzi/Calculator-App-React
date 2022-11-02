@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[View Live Demo](https://teal-druid-4505fc.netlify.app/quote)
+[View Live Demo](https://teal-druid-4505fc.netlify.app/calculator)
 
 ## Getting Started
 
